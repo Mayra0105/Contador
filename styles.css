@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f2f2;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff0f5;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff79c6;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Counter Display Styles */
+.display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #8be9fd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.display:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styles */
+.button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffb86c;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button:hover {
+    background-color: #ff79c6;
+}
+
+.reset {
+    background-color: #50fa7b;
+}
+
+.reset:hover {
+    background-color: #8be9fd;
+}
+
+/* Keyframes for Title Animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 3rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .display {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+}
